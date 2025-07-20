@@ -77,7 +77,7 @@
 .aligned-text {
   display: block;
   padding-bottom: 18px;
-  text-transform: uppercase;
+  text-transform: uppercase; /* в ревью по этому правилу было замечание, что его надо добавить, но оно у меня было изначально в коде*/
   letter-spacing: 30px;
   margin-right: -30px;
 }
@@ -133,6 +133,7 @@
 
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   list-style-type: none;
 }
@@ -203,7 +204,7 @@
 
 .about__column {
   align-self: start;
-  padding-top: 35px;
+  padding-top: 33px;
 }
 
 .about__logo {
@@ -218,7 +219,7 @@
 .about__logo-image {
   align-self: center;
   justify-content: center;
-  padding: 63px 46px;
+  padding: 64px 45.1px 62px 46.9px;
 }
 
 .about__title {
