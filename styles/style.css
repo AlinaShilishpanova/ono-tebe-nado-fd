@@ -77,9 +77,12 @@
 .aligned-text {
   display: block;
   padding-bottom: 18px;
-  text-transform: uppercase; /* в ревью по этому правилу было замечание, что его надо добавить, но оно у меня было изначально в коде*/
+  text-transform: uppercase;
   letter-spacing: 30px;
-  margin-right: -30px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
 }
 
 .aligned-text_left {
@@ -156,7 +159,7 @@
   justify-content: space-between;
   padding: 48px 40px;
   color: #fff;
-  height: 596px;
+  min-height: 596px;
   width: 334px;
 }
 
@@ -196,7 +199,6 @@
   margin-top: 120px;
   margin-bottom: 180px;
   padding: 0 24px;
-  min-height: 595px;
   grid-template-columns: 334px 1fr;
   align-items: center;
   gap: 25px;
@@ -205,6 +207,10 @@
 .about__column {
   align-self: start;
   padding-top: 33px;
+}
+
+.about__column-logo {
+  padding-left: 47px;
 }
 
 .about__logo {
